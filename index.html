@@ -1,88 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seminário de Física 2024 - Colégio Estadual Duque de Caxias</title>
+    <title>Robótica - Colégio Estadual do Campo Duque de Caxias</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: hsl(68, 94%, 50%);
-            color: #333;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #0cd30f;
-            color: rgb(21, 245, 47);
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header img {
-            height: 50px;
-        }
-        .logo-left {
-            margin-right: auto;
-        }
-        .logo-right {
-            margin-left: left;
+            background-color: #004d99;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
         .container {
             width: 80%;
             margin: 0 auto;
+            overflow: hidden;
+        }
+        .team-photo img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .project {
+            margin: 20px 0;
             padding: 20px;
-            background: hsl(75, 94%, 49%);
+            background-color: #ffffff;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
-        h2, h3 {
-            color: hwb(79 0% 0%);
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
         }
-        h1 {
-            color: rgb(7, 243, 7);
-            margin: 0;
-        }
-        .agenda-item {
-            margin-bottom: 15px;
-        }
-        .agenda-item h3 {
-            margin: 0;
-            font-size: 1.2em;
+        .project video {
+            max-width: 100%;
+            border-radius: 10px;
         }
         footer {
-            background-color: hsla(266, 100%, 50%, 0.941);
-            color: #0cd30f;
+            background-color: #004d99;
+            color: white;
             text-align: center;
             padding: 10px 0;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="bandeira.jpg" alt="duque" class="logo-right">
-        <h1><align>Seminário de Física 2024</align></h1>
-        <img src="nre.jpg" alt="Logo Direito" class="logo-right">
+        <h1>Robótica - Colégio Estadual do Campo Duque de Caxias</h1>
+        <p>Núcleo Regional de União da Vitória, Paraná</p>
     </header>
-    
+
     <div class="container">
-        <h2>Informações do Evento</h2>
-        <p><strong>Data: 12 a 15 de agosto de 2024</strong>  </p>
-        <p><strong>Horário:</strong> 8:30</p>
-        <p><strong>Local:</strong> Auditório do Colégio Estadual Duque de Caxias, Rua [Inserir Rua], nº [Inserir Número] - Antônio Olinto - PR</p>
-        <p><strong>Chairman:</strong> Prof. Me. Adriano Dubiel</p>
-        
-        <h2>Agenda</h2>
-        <div class="agenda-item">
-            <h3>08:00 - 08:30</h3>
-            <p>Credenciamento e Recepção</p>
-        </div>
-        <div class="agenda-item">
-            <h3>08:30 - 09:00</h3>
-            <p>Abertura Oficial - Saudação e boas-vindas pelo Prof. Me. Adriano Dubiel, Chairman do Evento</p>
-        </div>
-        <div class="agenda-item">
+        <section class="team-photo">
+            <h2>Conheça Nossa Equipe</h2>
+            <img src="foto-da-equipe.jpg" alt="Foto da Equipe">
+        </section>
+
+        <section class="projects">
+            <h2>Projetos</h2>
+
+            <div class="project">
+                <h3>Projeto 1: Robô Educacional</h3>
+                <img src="foto-do-projeto1.jpg" alt="Foto do Projeto 1">
+                <video controls>
+                    <source src="video-do-projeto1.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+                <p>Descrição do Projeto 1: Um robô educacional desenvolvido para auxiliar no aprendizado de programação e eletrônica.</p>
+            </div>
+
+            <div class="project">
+                <h3>Projeto 2: Robô Competitivo</h3>
+                <img src="foto-do-projeto2.jpg" alt="Foto do Projeto 2">
+                <video controls>
+                    <source src="video-do-projeto2.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+                <p>Descrição do Projeto 2: Um robô projetado para competições, com foco em agilidade e precisão.</p>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Colégio Estadual do Campo Duque de Caxias. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
